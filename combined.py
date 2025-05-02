@@ -251,69 +251,6 @@ if selected_section == "Data Visualization":
             fig.update_layout(xaxis_title='Store Type', yaxis_title='Average Weekly Sales')
             st.plotly_chart(fig, use_container_width=True)
     
-    # elif viz_option == "Correlation Analysis":
-    #     st.markdown("<div class='section-header'>Correlation Analysis</div>", unsafe_allow_html=True)
-        
-      
-    #     numerical_cols = train.select_dtypes(include=[np.number]).columns.tolist()
-    #     numerical_cols = [col for col in numerical_cols if 'Markdown' not in col or col == 'Total_MarkDown']
-        
-        
-    #     default_cols = ['Weekly_Sales', 'Temperature', 'Fuel_Price', 'CPI', 'Unemployment', 'Total_MarkDown', 'Size']
-    #     selected_cols = st.multiselect(
-    #         "Select features for correlation analysis",
-    #         options=numerical_cols,
-    #         default=default_cols
-    #     )
-        
-    #     if selected_cols:
-           
-    #         corr_matrix = train[selected_cols].corr()
-            
-    
-    #         fig = px.imshow(
-    #             corr_matrix,
-    #             text_auto=True,
-    #             aspect="auto",
-    #             title='Correlation Matrix',
-    #             labels=dict(color="Correlation"),
-    #             color_continuous_scale='RdBu_r',
-    #             zmin=-1, zmax=1
-    #         )
-    #         st.plotly_chart(fig, use_container_width=True)
-           
-    #         if len(selected_cols) <= 5:
-    #             st.markdown("<div class='section-header'>Pairplot Analysis</div>", unsafe_allow_html=True)
-                
-                
-    #             sample_size = min(5000, len(train))
-    #             train_sample = train.sample(sample_size, random_state=42)
-                
-    #             fig = px.scatter_matrix(
-    #                 train_sample,
-    #                 dimensions=selected_cols,
-    #                 title='Feature Pairplot',
-    #                 opacity=0.5
-    #             )
-    #             fig.update_layout(height=800)
-    #             st.plotly_chart(fig, use_container_width=True)
-            
-           
-    #         st.markdown("<div class='section-header'>Feature vs Weekly Sales</div>", unsafe_allow_html=True)
-            
-    #         features_to_plot = [col for col in selected_cols if col != 'Weekly_Sales']
-            
-    #         if features_to_plot:
-    #             for feature in features_to_plot:
-    #                 fig = px.scatter(
-    #                     train_sample,
-    #                     x=feature,
-    #                     y='Weekly_Sales',
-    #                     opacity=0.5,
-    #                     title=f'Weekly Sales vs {feature}',
-    #                     trendline='ols'
-    #                 )
-    #                 st.plotly_chart(fig, use_container_width=True)
     elif viz_option == "Correlation Analysis":
         st.markdown("<div class='section-header'>Correlation Analysis</div>", unsafe_allow_html=True)
 
