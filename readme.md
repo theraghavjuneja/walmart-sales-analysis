@@ -55,3 +55,22 @@ streamlit run app.py
 #### If in case any error occurs , contact me theraghavjuneja@gmail.com,
 - Open for gigs for full-stack, Computer Vision and AI-ML Projects
 
+# Screenshots
+
+Below are the screenshots showing the features and workflow of the project.
+
+### Screenshot Gallery
+
+![ss1](./ss1.png)
+![ss2](./ss2.png)
+![ss3](./ss3.png)
+![ss4](./ss4.png)
+![ss5](./ss5.png)
+![ss6](./ss6.png)
+![ss7](./ss7.png)
+![ss8](./ss8.png)
+![ss9](./ss9.png)
+![ss10](./ss10.png)
+![ss11](./ss11.png)
+![ss12](./ss12.png)
+![ss13](./ss13.png)
