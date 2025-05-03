@@ -51,4 +51,7 @@ streamlit run app.py
 
 
 ---
+- Due to all dependencies, it may take some time to run , so wait patiently...
+#### If in case any error occurs , contact me theraghavjuneja@gmail.com,
+- Open for gigs for full-stack, Computer Vision and AI-ML Projects
 
