@@ -956,12 +956,12 @@ elif selected_section == "Key Factors Analysis":
         # Sort by absolute correlation
         correlations.sort(key=lambda x: abs(x[1]), reverse=True)
         
-        # Create dataframe for visualization
+      
         corr_df = pd.DataFrame(correlations, columns=['Feature', 'Correlation'])
         corr_df['Abs_Correlation'] = corr_df['Correlation'].abs()
         corr_df = corr_df.head(15)  # Top 15 features
         
-        # Plot feature importance
+        # feature importance
         fig = px.bar(
             corr_df,
             x='Feature',
